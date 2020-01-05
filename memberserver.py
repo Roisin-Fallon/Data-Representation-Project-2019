@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-  
 from flask import Flask, jsonify, request, abort
 from memberDAO import memberDAO
 
@@ -78,16 +76,4 @@ def delete(id):
     return jsonify({"done":True})
 
 if __name__ == '__main__' :
-=======
-from flask import Flask
-# from memberDAO import memberDAO
-
-app = Flask(__name__, static_url_path='', static_folder='.')
-
-@app.route('/')
-def index():
-   return "Hello, World!"
-
-if __name__ == '__main__' :
->>>>>>> f6390b447151160f9f6daed6f6c5a9e119c1ac31
     app.run(debug= True)
