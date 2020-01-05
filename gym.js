@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //This section of the javascript file is used for the charts on the Gym Stats page, it sets the x and y axis height and width for the chart. It also appends the svg object to the html page - stats.html
 
 // set the dimensions and margins of the graph
@@ -560,5 +560,4 @@ myInput.onkeyup = function() {
     length.classList.remove("valid");
     length.classList.add("invalid");
   }
->>>>>>> f6390b447151160f9f6daed6f6c5a9e119c1ac31
 }
