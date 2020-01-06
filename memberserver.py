@@ -1,13 +1,12 @@
-from flask import Flask, jsonify, request, abort
+from flask import Flask, jsonify, abort, render_template, request, redirect, url_for, session
 from memberDAO import memberDAO
+from flask_mysqldb import MySQL
+import MySQLdb.cursors
+import re
 
 app = Flask(__name__, static_url_path='', static_folder='.')
 
-#app = Flask(__name__)
 
-#@app.route('/')
-#def index():
-#    return "Hello, World!"
 
 #curl "http://127.0.0.1:5000/members"
 @app.route('/members')
@@ -69,7 +68,7 @@ def update(id):
     memberDAO.update(values)
     return jsonify(foundMember)
         
-#  curl -X DELETE http://localhost:5000/members/7
+#  curl -X DELETE http://localhost:5000/members/2
 @app.route('/members/<int:id>' , methods=['DELETE'])
 def delete(id):
     memberDAO.delete(id)
