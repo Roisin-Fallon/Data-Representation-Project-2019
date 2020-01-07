@@ -21,3 +21,14 @@
 7. flask run
 8. Copy the url to the web browser: to view the membership should appear like :  http://127.0.0.1:5000/membership.html; to view the general website  http://127.0.0.1:5000/gymwebsite.html and using the tabs we can navigate through the different tabs
 
+Python Anywhere:
+
+Python Anywhere can be accessed at the following link: http://roisinfallonshauna.eu.pythonanywhere.com/
+ * Again you will arrive at the login page and the same username and password should be used. Please enter username: andrew and password: andrew. I have promted this in this situation but this would be removed in a normal situation.  If the incorrect username or password is entered the user will not be able to enter the website until they enter the correct credentials.
+ * If you would like to view my work for python anywhere this can be accessed by entering the email: lifenmotiongym@gmail.com username: RoisinShaunaFallon password: lifenmotiongym.
+ I added a module to the service on the host: added corrs - again this can be viewed by loggining into the python anywhere website. 
+ 
+Please not I added mode
+
+Footer:
+In the footer of each of the html pages I have included social networ icon bar which link towards twitter, gmail that I created for Life N Motion Gym, a youtube tutorial to a fitness video etc. 
