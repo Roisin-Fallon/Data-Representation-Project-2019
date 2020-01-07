@@ -8,12 +8,14 @@
 
 
 In this project I created a gym web application. The files above represent the following:
-|File Name| Description|
-|---------|------------|
+
+|File Name | Description                            |
+|----------|----------------------------------------|
 |images | This folder contains the images that were used in this project |
 |.gitignore | This is a text file that tells GIT which files or folders to ignore in the project |
 |Project Description.pdf | This gives the outline of the Data Representation Project 2019 |
 |README.md | This is the current file that briefly describes the project |
+
 requirements.txt
 contact.html
 gymwebsite.html
