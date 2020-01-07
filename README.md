@@ -37,7 +37,6 @@ In the footer of each of the html pages I have included social networ icon bar w
 
 ### MySQL Database 
 
-|----------------|--------------|------|-----|---------|----------------|
 | Field          | Type         | Null | Key | Default | Extra          |
 |----------------|--------------|------|-----|---------|----------------|
 | id             | int(11)      | NO   | PRI | NULL    | auto_increment |
