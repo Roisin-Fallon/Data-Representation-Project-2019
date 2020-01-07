@@ -7,6 +7,29 @@
 4. Open the command line and navigate to the location of your downloaded file using a series of cd commands 
 
 
+In this project I created a gym web application. The files above represent the following:
+|File Name| Description|
+|---------|------------|
+|images | This folder contains the images that were used in this project |
+|.gitignore | This is a text file that tells GIT which files or folders to ignore in the project |
+|Project Description.pdf | This gives the outline of the Data Representation Project 2019 |
+|README.md | This is the current file that briefly describes the project |
+requirements.txt
+contact.html
+gymwebsite.html
+index.html
+login.html
+membership.html
+schedule.html
+createDatabase.py
+insertIntoTable.py
+dbconfig.py
+dbconfigtemplate.py
+memberDAO.py
+memberserver.py
+gym.js
+style.css
+
 
 ### Footer:
 In the footer of each of the html pages I have included social networ icon bar which link towards twitter, gmail that I created for Life N Motion Gym, a youtube tutorial to a fitness video etc. 
