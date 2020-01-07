@@ -6,7 +6,13 @@
 3. Download and unzip this file. Save the unziped file to a location on your desktop where it is easily accessible
 4. Open the command line and navigate to the location of your downloaded file using a series of cd commands 
 
-## Command to create virtual machine 
+
+
+### Footer:
+In the footer of each of the html pages I have included social networ icon bar which link towards twitter, gmail that I created for Life N Motion Gym, a youtube tutorial to a fitness video etc. 
+
+
+### Command to create virtual machine 
 1. python -m venv venv 
 2. Create a temporary .gitignore file using the vi .gitignore make sure to change to INSERT venv by typing INSERT then on top venv/ then press esc :wq. The following should be found in your .gitignore venv/ *config.py __pycache__
 3.  .\venv\Scripts\activate.bat
@@ -21,15 +27,21 @@
 7. flask run
 8. Copy the url to the web browser: to view the membership should appear like :  http://127.0.0.1:5000/membership.html; to view the general website  http://127.0.0.1:5000/gymwebsite.html and using the tabs we can navigate through the different tabs
 
-### Python Anywhere:
+## Python Anywhere:
 
 Python Anywhere can be accessed at the following link: http://roisinfallonshauna.eu.pythonanywhere.com/
- * Again you will arrive at the login page and the same username and password should be used. <b> Please enter the following:
+ * Again you will arrive at the login page and the same username and password should be used. 
+ <b> Please enter the following:
+   
       * username: andrew 
       * password: andrew. </b> 
-   * I have promted this in this situation but this would be removed in a normal situation.  If the incorrect username or password is entered the user will not be able to enter the website until they enter the correct credentials.
- * If you would like to view my work for python anywhere this can be accessed by entering the email: lifenmotiongym@gmail.com username: RoisinShaunaFallon password: lifenmotiongym.
+      
+  * I have promted this in this situation but this would be removed in a normal situation.  
+  * If the incorrect username or password is entered the user will not be able to enter the website until they enter the correct credentials.
+ * If you would like to view my work for python anywhere my creddentials are the following:
+ 
+      * email: lifenmotiongym@gmail.com 
+      * username: RoisinShaunaFallon 
+      * password: lifenmotiongym.
+      
  * I added a module to the service on the host: added corrs - again this can be viewed by loggining into the python anywhere website. 
-
-### Footer:
-In the footer of each of the html pages I have included social networ icon bar which link towards twitter, gmail that I created for Life N Motion Gym, a youtube tutorial to a fitness video etc. 
