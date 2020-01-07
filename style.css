@@ -1,4 +1,4 @@
-body{
+ody{
 	font:15px/1.5 Arial, Helbetica,sans-serif;
 	margin:0;
 	padding:0;
@@ -165,13 +165,6 @@ header a:focus{
 	width:90px;
 }
 
-ul li a i {
-	transition: all 0.2s ease-in-out;
-}
-ul li a i:hover {
-	opacity: .7;
-}
-
 footer{
 	position:fixed;
     bottom:0;
@@ -182,7 +175,6 @@ footer{
 	text-align:center;
 	position:relative;
 }
-
 
 
 * {box-sizing: border-box;}
@@ -315,6 +307,42 @@ img {vertical-align: middle;}
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Style the container for inputs */
+.containerlogin {
+
+    width: 850px;
+    padding: 36px 0px 0px 450px;
+}
+
+
+
 /* Bordered form */
 form {
   border: 3px solid #f1f1f1;
@@ -328,6 +356,14 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
 }
 
 /* Set a style for all buttons */
@@ -424,4 +460,4 @@ button:hover {
 @keyframes animatezoom {
   from {transform: scale(0)}
   to {transform: scale(1)}
-} 
+  
