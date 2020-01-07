@@ -10,6 +10,6 @@ db = mysql.connector.connect(
 )
 
 cursor = db.cursor()
-sql="CREATE TABLE members (id INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(255), membershipPlan VARCHAR(20), startDate DATE , age INT)"
+sql="CREATE TABLE members(id INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(255), membershipPlan VARCHAR(20), startDate DATE , age INT)"
 
 cursor.execute(sql)

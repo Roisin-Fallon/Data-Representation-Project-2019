@@ -1,13 +1,29 @@
-from flask import Flask, jsonify, abort, render_template, request, redirect, url_for, session
+from flask import Flask, jsonify, abort, render_template, request, redirect, url_for, session,flash
 from memberDAO import memberDAO
-from flask_mysqldb import MySQL
-import MySQLdb.cursors
-import re
 
-app = Flask(__name__, static_url_path='', static_folder='.')
+app = Flask(__name__, static_url_path='', static_folder='.', template_folder="")
+app.secret_key = 'super secret key'
+
+@app.route("/", methods=['GET', 'POST'])
+def login():
+    error = None
+    if request.method == 'POST':
+        # I have set the username and password here to admin
+        if request.form['username'] != 'andrew' or request.form['password'] != 'andrew':
+            # If UN and PW are not true Print
+            error = 'Invalid Credentials. Please try again.'
+        else:
+            # Send to index page of the site if UN and PW = True
+            return render_template("/index.html")
+    return render_template("login.html", error=error)
 
 
+# http://localhost:5000/python/logout - this will be the logout page
 
+	
+@app.route('/membershi', methods=['GET', 'POST'])
+def membership():
+        return render_template('membership.html')
 #curl "http://127.0.0.1:5000/members"
 @app.route('/members')
 def getAll():
