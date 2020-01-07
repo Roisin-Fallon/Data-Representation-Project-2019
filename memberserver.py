@@ -20,10 +20,6 @@ def login():
             return render_template("/index.html")
     return render_template("login.html", error=error)
 
-
-# http://localhost:5000/python/logout - this will be the logout page
-
-	
 @app.route('/membershi', methods=['GET', 'POST'])
 def membership():
         return render_template('membership.html')
