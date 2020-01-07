@@ -15,22 +15,23 @@
 
     <body>
 		<header>
-			<div class="container">
-			<h3>Life N Motion Gym</h3>
+		<div class="container">
+		<h3>Life N Motion Gym</h3>
 			<div id="branding">
+				
 				<h1><span class="highlight">START</span> THE CHANGE TODAY</h1>
-			</div>
-			<nav class="menu">
-				<ul>
+		</div>
+		<nav class="menu">
+			<ul>
 				<li id="current"><a href="index.html">Home</a><li>
 				<li><a href="schedule.html">Timetable</a><li>
 				<li><a href="membership.html">Members</a><li></li>
 				<li><a href="contact.html">Contact Us</a></li>
-				<li><a href="logout.html">Logout</a></li>
-				
-				</ul>
-			</nav>
-			</div>
+			
+			</ul>
+		</nav>
+
+		</div>
 		</header>
 				
         <h1>Members</h1>
@@ -53,10 +54,8 @@
 		
                 <h2><span id="createLabel">Create a</span> <span id="updateLabel">update</span> Member</h2>
                 <input type="hidden" name="id"><br/>
-				Email <input type="text" id="email" name="email" pattern ="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" required><br/>
-				
-				
-                Membership Plan <select name="membershipPlan">
+			   Email<input type="text" id="email" name="email"/> <br/>								
+               Membership Plan <select name="membershipPlan">
 						<option value ="NA" selected>[Choose Yours]</option>
                         <option value="Daily">Daily</option>
                         <option value="Monthly">Monthly</option>
@@ -155,7 +154,6 @@
         deleteMemberAjax(rowElement.getAttribute("id"));
         tableElement.deleteRow(index);
     }
-
     function addMemberToTable(member){
 	
         var tableElement = document.getElementById('memberTable')
@@ -305,4 +303,5 @@
     }
     getAllAjax();
     
-    </script>
+</script>
+</html> 
