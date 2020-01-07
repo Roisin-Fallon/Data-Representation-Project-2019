@@ -8,7 +8,7 @@ app.secret_key = 'super secret key'
 def login():
     error = None
     if request.method == 'POST':
-        # I have set the username and password here to admin
+        # I have set the username and password here to andrew
         if request.form['username'] != 'andrew' or request.form['password'] != 'andrew':
             # If UN and PW are not true Print
             error = 'Invalid Credentials. Please try again.'
