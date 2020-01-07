@@ -19,15 +19,15 @@ In this project I created a gym web application. The files above represent the f
 |contact.html| Page on the website that allows user to ask question |
 gymwebsite.html
 index.html
-|login.html| Page 
-|membership.html|
-|schedule.html|
+|login.html| Webpage which shows how the login page will appear|
+|membership.html| Webpage with CRUD interface for interacting with database|
+|schedule.html| Webpage which shows the timetable for the classes for the Life N Motion Gym|
 |createDatabase.py| Create a table containing the gym members, run on the command line: python createDatabase.py |
 |insertIntoTable.py| Insert row into the gym members table, run on the command line: python insertIntoTable.py |
-dbconfig.py
-dbconfigtemplate.py
-memberDAO.py
-memberserver.py
+|dbconfig.py| File for configuration of MySQL parameters|
+|dbconfigtemplate.py | Template file for configuration of MySQL parameters|
+|memberDAO.py| Data Access Object file for interacting with the members database|
+|memberserver.py| Web server for local gost and Python Anywhere|
 |gym.js|A JS file is a text file containing JavaScript code that is used to execute JavaScript instructions in web pages. It may include functions that open and close windows, validate form fields, enable rollover images, or create drop-down menus.|
 |style.css| This describes how html elements are to be displayed on screen which allows control over multiple web pages all at once |
 
@@ -74,7 +74,7 @@ insert into members (email, membershipPlan, startDate, age) values ("johnbyrne@g
 |  2 |  jameskelly@yahoo.ie      | Annually       | 2018-11-02 |   30 |
 |  3 |  johnbyrne@gmail.com      | Daily          | 2019-02-12 |   19 |
 
-### Command to create virtual machine 
+## Command to create virtual machine 
 1. python -m venv venv 
 2. Create a temporary .gitignore file using the vi .gitignore make sure to change to INSERT venv by typing INSERT then on top venv/ then press esc :wq. The following should be found in your .gitignore venv/ *config.py __pycache__
 3.  .\venv\Scripts\activate.bat
