@@ -16,12 +16,12 @@ In this project I created a gym web application. The files above represent the f
 |Project Description.pdf | This gives the outline of the Data Representation Project 2019 |
 |README.md | This is the current file that briefly describes the project |
 |requirements.txt | This file is used for specifying what python packages are required to run the project |
-|contact.html| 
+|contact.html| Page on the website that allows user to ask question |
 gymwebsite.html
 index.html
-login.html
-membership.html
-schedule.html
+|login.html| Page 
+|membership.html|
+|schedule.html|
 |createDatabase.py| Create a table containing the gym members, run on the command line: python createDatabase.py |
 |insertIntoTable.py| Insert row into the gym members table, run on the command line: python insertIntoTable.py |
 dbconfig.py
@@ -34,6 +34,17 @@ memberserver.py
 
 ### Footer:
 In the footer of each of the html pages I have included social networ icon bar which link towards twitter, gmail that I created for Life N Motion Gym, a youtube tutorial to a fitness video etc. 
+
+### MySQL Database 
+
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| id             | int(11)      | NO   | PRI | NULL    | auto_increment |
+| email          | varchar(255) | YES  |     | NULL    |                |
+| membershipPlan | varchar(20)  | YES  |     | NULL    |                |
+| startDate      | date         | YES  |     | NULL    |                |
+| age            | int(11)      | YES  |     | NULL    |                |
 
 
 ### Command to create virtual machine 
