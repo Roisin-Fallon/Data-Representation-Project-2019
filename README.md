@@ -1,11 +1,7 @@
+
 # Data-Representation-Project-2019
 
-## How to download the repository:
-1. Download the repository from the following link <a href=https://github.com/Roisin-Fallon/Data-Representation-Project-2019>Click here</a>  
-2. Click the clone or download button towards the right of your screen
-3. Download and unzip this file. Save the unziped file to a location on your desktop where it is easily accessible
-4. Open the command line and navigate to the location of your downloaded file using a series of cd commands 
-
+## Roisin Fallon
 
 In this project I created a gym web application. The files above represent the following:
 
@@ -17,8 +13,8 @@ In this project I created a gym web application. The files above represent the f
 |README.md | This is the current file that briefly describes the project |
 |requirements.txt | This file is used for specifying what python packages are required to run the project |
 |contact.html| Page on the website that allows user to ask question |
-gymwebsite.html
-index.html
+|gymwebsite.html| web page that ties the project together|
+|index.html| home page that the user will arrive to once they have entered the correct username and password|
 |login.html| Webpage which shows how the login page will appear|
 |membership.html| Webpage with CRUD interface for interacting with database|
 |schedule.html| Webpage which shows the timetable for the classes for the Life N Motion Gym|
@@ -31,9 +27,69 @@ index.html
 |gym.js|A JS file is a text file containing JavaScript code that is used to execute JavaScript instructions in web pages. It may include functions that open and close windows, validate form fields, enable rollover images, or create drop-down menus.|
 |style.css| This describes how html elements are to be displayed on screen which allows control over multiple web pages all at once |
 
+# PLEASE NOTE THE FOLLING FEATURES TO MY WEB APP
 
-### Footer:
-In the footer of each of the html pages I have included social networ icon bar which link towards twitter, gmail that I created for Life N Motion Gym, a youtube tutorial to a fitness video etc. 
+* ### Footer:
+In the footer of each of the html pages I have included social networ icon bar which link towards twitter, gmail that I created for Life N Motion Gym, a youtube tutorial to a fitness video etc.
+* ### Timetable created using html 
+* ###  Mmeber Database it is really important that when you update you include the date joined as it will not work correctly otherwise
+
+
+# Data-Representation-Project-2019
+
+## How to download the repository:
+1. Download the repository from the following link <a href=https://github.com/Roisin-Fallon/Data-Representation-Project-2019>Click here</a>  
+2. Click the clone or download button towards the right of your screen
+3. Download and unzip this file. Save the unziped file to a location on your desktop where it is easily accessible
+4. Open the command line and navigate to the location of your downloaded file using a series of cd commands 
+
+### Run virtual machine
+1. Once you have navigated to the location of your folser using a series of cd commands. Please do the following commands:
+ *  python -m venv venv 
+ * .\venv\Scripts\activate.bat
+ * set FLASK_APP=memberserver
+ * set FLASK_ENV=development
+ * set FLASK_DEBUG=1
+ * echo %FLASK_APP%
+ * flask run
+2.  Copy the url to the web browser: to view the membership should appear like :  http://127.0.0.1:5000/membership.html; to view the general website  http://127.0.0.1:5000/gymwebsite.html and using the tabs we can navigate through the different tabs
+
+### Commands to create a virtual machine 
+
+<i> When setting up the virtual machine there were commands needed which I outlined below but as they are in the requirements.txt and .gitignore there is no need to do all these commands. This is simply to explain how to approach setting up a virtual machine. </i>
+
+ *  python -m venv venv 
+ *  Create a temporary .gitignore file using the vi .gitignore make sure to change to INSERT venv by typing INSERT then on top venv/ then press esc :wq. The following should be found in your .gitignore venv/ *config.py __pycache__
+ * .\venv\Scripts\activate.bat
+ * pip install flask 
+ * pip install mysql-connector-python     
+ * pip install flask_cors pip3 install flask-mysqldb
+ * pip freeze > requirements.txt
+ * set FLASK_APP=memberserver
+ * set FLASK_ENV=development
+ * set FLASK_DEBUG=1
+ * echo %FLASK_APP%
+ * flask run
+
+## Python Anywhere:
+
+Python Anywhere can be accessed at the following link: http://roisinfallonshauna.eu.pythonanywhere.com/
+ * Again you will arrive at the login page and the same username and password should be used. 
+ <b> Please enter the following:
+   
+      * username: andrew 
+      * password: andrew. </b> 
+      
+  * I have promted this in this situation but this would be removed in a normal situation.  
+  * If the incorrect username or password is entered the user will not be able to enter the website until they enter the correct credentials.
+ * If you would like to view my work for python anywhere my creddentials are the following:
+ 
+      * email: lifenmotiongym@gmail.com 
+      * username: RoisinShaunaFallon 
+      * password: lifenmotiongym.
+      
+ * I added a module to the service on the host: added corrs - again this can be viewed by loggining into the python anywhere website. 
+
 
 ### MySQL Database 
 
@@ -74,36 +130,3 @@ insert into members (email, membershipPlan, startDate, age) values ("johnbyrne@g
 |  2 |  jameskelly@yahoo.ie      | Annually       | 2018-11-02 |   30 |
 |  3 |  johnbyrne@gmail.com      | Daily          | 2019-02-12 |   19 |
 
-## Command to create virtual machine 
-1. python -m venv venv 
-2. Create a temporary .gitignore file using the vi .gitignore make sure to change to INSERT venv by typing INSERT then on top venv/ then press esc :wq. The following should be found in your .gitignore venv/ *config.py __pycache__
-3.  .\venv\Scripts\activate.bat
-4. pip install flask  
-   pip3 install mysql-connector-python     
-   pip install flask_cors pip3 install flask-mysqldb
-   pip freeze > requirements.txt
-5. set FLASK_APP=memberserver
-   set FLASK_ENV=development
-   set FLASK_DEBUG=1
-6. echo %FLASK_APP%
-7. flask run
-8. Copy the url to the web browser: to view the membership should appear like :  http://127.0.0.1:5000/membership.html; to view the general website  http://127.0.0.1:5000/gymwebsite.html and using the tabs we can navigate through the different tabs
-
-## Python Anywhere:
-
-Python Anywhere can be accessed at the following link: http://roisinfallonshauna.eu.pythonanywhere.com/
- * Again you will arrive at the login page and the same username and password should be used. 
- <b> Please enter the following:
-   
-      * username: andrew 
-      * password: andrew. </b> 
-      
-  * I have promted this in this situation but this would be removed in a normal situation.  
-  * If the incorrect username or password is entered the user will not be able to enter the website until they enter the correct credentials.
- * If you would like to view my work for python anywhere my creddentials are the following:
- 
-      * email: lifenmotiongym@gmail.com 
-      * username: RoisinShaunaFallon 
-      * password: lifenmotiongym.
-      
- * I added a module to the service on the host: added corrs - again this can be viewed by loggining into the python anywhere website. 
