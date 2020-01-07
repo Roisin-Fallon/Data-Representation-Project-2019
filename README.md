@@ -15,22 +15,21 @@ In this project I created a gym web application. The files above represent the f
 |.gitignore | This is a text file that tells GIT which files or folders to ignore in the project |
 |Project Description.pdf | This gives the outline of the Data Representation Project 2019 |
 |README.md | This is the current file that briefly describes the project |
-
-requirements.txt
-contact.html
+|requirements.txt | This file is used for specifying what python packages are required to run the project |
+|contact.html| 
 gymwebsite.html
 index.html
 login.html
 membership.html
 schedule.html
-createDatabase.py
-insertIntoTable.py
+|createDatabase.py| Create a table containing the gym members, run on the command line: python createDatabase.py |
+|insertIntoTable.py| Insert row into the gym members table, run on the command line: python insertIntoTable.py |
 dbconfig.py
 dbconfigtemplate.py
 memberDAO.py
 memberserver.py
-gym.js
-style.css
+|gym.js|A JS file is a text file containing JavaScript code that is used to execute JavaScript instructions in web pages. It may include functions that open and close windows, validate form fields, enable rollover images, or create drop-down menus.|
+|style.css| This describes how html elements are to be displayed on screen which allows control over multiple web pages all at once |
 
 
 ### Footer:
