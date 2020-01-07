@@ -1,7 +1,10 @@
 from flask import Flask, jsonify, abort, render_template, request, redirect, url_for, session,flash
 from memberDAO import memberDAO
+from flask_cors import CORS
 
 app = Flask(__name__, static_url_path='', static_folder='.', template_folder="")
+CORS(app)
+
 app.secret_key = 'super secret key'
 
 @app.route("/", methods=['GET', 'POST'])
