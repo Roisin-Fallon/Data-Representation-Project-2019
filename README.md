@@ -52,6 +52,7 @@ In this project I created a gym web application. The files above represent the f
  * echo %FLASK_APP%
  * flask run
 2.  Copy the url to the web browser: to view the membership should appear like :  http://127.0.0.1:5000/membership.html; to view the general website  http://127.0.0.1:5000/gymwebsite.html and using the tabs we can navigate through the different tabs
+3. Once you reach the login screen enter usernname:andrew and password: andrew
 
 ### Commands to create a virtual machine 
 
