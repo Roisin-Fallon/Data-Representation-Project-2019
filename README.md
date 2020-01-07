@@ -37,6 +37,20 @@ In the footer of each of the html pages I have included social networ icon bar w
 
 ### MySQL Database 
 
+#### MySQLommand to creeate table 
+
+ CREATE TABLE members(
+       id int NOT NULL AUTO_INCREMENT,
+       email VARCHAR(255),
+       membershipPlan VARCHAR(20),
+       startDate DATE,
+       age INT,
+       PRIMARY KEY(id)
+       );
+
+
+DESC members;
+
 | Field          | Type         | Null | Key | Default | Extra          |
 |----------------|--------------|------|-----|---------|----------------|
 | id             | int(11)      | NO   | PRI | NULL    | auto_increment |
@@ -45,6 +59,20 @@ In the footer of each of the html pages I have included social networ icon bar w
 | startDate      | date         | YES  |     | NULL    |                |
 | age            | int(11)      | YES  |     | NULL    |                |
 
+
+#### MySQLommand to insert row into table 
+
+insert into members (email, membershipPlan, startDate, age) values ("marygarcia@gmail.com","Monthly", "2018-07-24", 23)
+
+insert into members (email, membershipPlan, startDate, age) values ("jameskelly@yahoo.ie","Annually", "2018-11-02", 30)
+
+insert into members (email, membershipPlan, startDate, age) values ("johnbyrne@gmail.com","Daily", "2019-02-12", 19)
+
+| id | email                     | membershipPlan | startDate  | age  |
+|----|---------------------------|----------------|------------|------|
+|  1 | marygarcia@gmail.com      | Monthly        | 2018-07-24 |   23 |
+|  2 |  jameskelly@yahoo.ie      | Annually       | 2018-11-02 |   30 |
+|  3 |  johnbyrne@gmail.com      | Daily          | 2019-02-12 |   19 |
 
 ### Command to create virtual machine 
 1. python -m venv venv 
