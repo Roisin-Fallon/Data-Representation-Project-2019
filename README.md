@@ -29,10 +29,9 @@ In this project I created a gym web application. The files above represent the f
 
 # PLEASE NOTE THE FOLLING FEATURES TO MY WEB APP
 
-* ### Footer:
-In the footer of each of the html pages I have included social networ icon bar which link towards twitter, gmail that I created for Life N Motion Gym, a youtube tutorial to a fitness video etc.
-* ### Timetable created using html 
-* ###  Mmeber Database it is really important that when you update you include the date joined as it will not work correctly otherwise
+* Footer: In the footer of each of the html pages I have included social networ icon bar which link towards twitter, gmail that I created for Life N Motion Gym, a youtube tutorial to a fitness video etc.
+* Timetable created using html 
+* Mmeber Database it is really important that when you update you include the date joined as it will not work correctly otherwise
 
 
 # Data-Representation-Project-2019
